@@ -14,6 +14,17 @@ export default function Header() {
         a {
           color: red;
           padding-left: 1rem;
+          font-size: 1.3rem;
+
+          @media (min-width: 500px) {
+            font-size: 1.4rem;
+          }
+          @media (min-width: 768px) {
+            font-size: 1.5rem;
+          }
+          @media (min-width: 1000px) {
+            font-size: 1.7rem;
+          }
         }
       `}
     >

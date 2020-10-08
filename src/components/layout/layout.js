@@ -18,6 +18,18 @@ export default function Layout({ children }) {
             background: #333;
             color: #fff;
             font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            @media (min-width: 500px) {
+              font-size: 1.5rem;
+            }
+
+            @media (min-width: 768px) {
+              font-size: 2rem;
+            }
+
+            @media (min-width: 1000px) {
+              font-size: 3rem;
+            }
           }
 
           img {

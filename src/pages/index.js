@@ -9,7 +9,7 @@ export default function Home() {
       <div
         css={css`
           text-align: center;
-          margin-top: 3rem;
+          margin-top: 10rem;
 
           .contact {
             margin-top: 2rem;
