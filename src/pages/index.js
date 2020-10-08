@@ -10,6 +10,14 @@ export default function Home() {
         css={css`
           text-align: center;
           margin-top: 10rem;
+          
+          @media (min-width: 768px) {
+            font-size: 1.5rem;
+          }
+
+          @media (min-width: 1000px) {
+            font-size: 2rem;
+          }
 
           .contact {
             margin-top: 2rem;
