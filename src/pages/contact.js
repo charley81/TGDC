@@ -8,10 +8,11 @@ export default function ContactPage() {
       <div
         css={css`
           max-width: 700px;
-          margin: auto;
+          margin: 5rem auto 0;
           padding: 1rem;
+          border-radius: 3px;
 
-          h3 {
+          p {
             text-align: center;
           }
 
@@ -19,14 +20,16 @@ export default function ContactPage() {
             display: block;
             width: 100%;
             margin: 1rem 0;
+            font-size: 1rem;
           }
 
           input,
           textarea {
             display: block;
             width: 100%;
-            border-radius: 3px;
+            border-radius: 5px;
             padding: 1rem;
+            border: transparent;
           }
 
           button {
@@ -46,19 +49,23 @@ export default function ContactPage() {
           }
         `}
       >
-        <h3>Leave us a message</h3>
+        <p>Leave us a message</p>
         <form name="contact" method="POST" data-netlify="true">
           <label>
             Name:
-            <input type="text" />
+            <input type="text" placeholder="Enter Name" />
           </label>
           <label>
             Email:
-            <input type="email" />
+            <input type="email" placeholder="Enter Email" />
           </label>
           <label>
             Message:
-            <textarea cols="30" rows="10"></textarea>
+            <textarea
+              cols="30"
+              rows="10"
+              placeholder="Enter Message"
+            ></textarea>
           </label>
           <button type="submit">Submit</button>
         </form>
