@@ -63,13 +63,14 @@ export default function ContactPage() {
       >
         <p>Leave us a message</p>
         <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name='form-name' value='contact'/>
           <label>
             Name:
-            <input type="text" placeholder="Enter Name" />
+            <input type="text" placeholder="Enter Name" name='name'/>
           </label>
           <label>
             Email:
-            <input type="email" placeholder="Enter Email" />
+            <input type="email" placeholder="Enter Email" name='email'/>
           </label>
           <label>
             Message:
@@ -77,6 +78,7 @@ export default function ContactPage() {
               cols="30"
               rows="10"
               placeholder="Enter Message"
+              name='message'
             ></textarea>
           </label>
           <button type="submit">Submit</button>
